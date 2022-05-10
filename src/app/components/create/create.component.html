@@ -3,10 +3,10 @@
         <div class="col-lg-8 offset-lg-2">
             <div class="card">
                 <div class="card-body text-center">
-                    <span class="g-title">CREATE DUTY</span>
+                    <span class="g-title"> {{ dutyTitle | uppercase }}</span>
                     <form [formGroup]="dutyForm" (ngSubmit)="addDuty()">
                         <div class="mb-4">
-                            <input formControlName="Name" type="text" class="form-control form-control-lg" placeholder="Duty description" required>
+                            <input formControlName="Name" type="text" class="form-control form-control-lg" placeholder="Duty description">
                             <div class="text-danger text-start ps-2" *ngIf="dutyForm.get('Name')?.value.length == 0 && dutyForm.get('Name')?.touched">
                                 <span>This field is <strong>required</strong>.</span>
                             </div>

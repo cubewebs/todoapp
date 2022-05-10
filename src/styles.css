@@ -23,3 +23,11 @@ body {
   font-weight: bold;
   margin-bottom: 2rem;
 }
+
+.marked-duty {
+  text-decoration: line-through;
+}
+
+.active-duty {
+  text-decoration: none;
+}
